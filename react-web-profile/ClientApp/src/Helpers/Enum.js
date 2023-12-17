@@ -1,16 +1,16 @@
-export const EnumPortfolioProject = name => {
-    let key = ""
-    switch (name) {
-        case "KMA Marketplace": key = 1; break;
-        case "KA Auto Softkeypad": key = 2; break;
-        case "Ekyc App": key = 3; break;
-        case "Seanheng Chatbot": key = 4; break;
-        case "Thai Smart Card Reader Library": key = 5; break;
-        case "WPF Smart Teller": key = 6; break;
-        case "Kbol Backend FX Special Rate (SWIFT)": key = 7; break;
-        case "Giving Forward Api Adapter Library": key = 8; break;
-        case "Skill Development Workshop": key = 9; break;
-        default: key = null;
+export const EnumPortfolioProject = key => {
+    let value = ""
+    switch (key) {
+        case 1 : value = "KMA Marketplace"; break;
+        case 2 : value = "Krungsri Auto SmartQ"; break;
+        case 3 : value = "Ekyc App"; break;
+        case 4 : value = "Seanheng Chatbot"; break;
+        case 5 : value = "Thai Smart Card Reader Library"; break;
+        case 6 : value = "SCB Smart Teller"; break;
+        case 7 : value = "Kbol Backend FX Special Rate (SWIFT)"; break;
+        case 8 : value = "Giving Forward Api Adapter Library"; break;
+        case 9 : value = "Skill Development Workshop"; break;
+        default: value = null;
     }
-    return key;
+    return value;
 }

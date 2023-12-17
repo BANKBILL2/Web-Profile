@@ -34,10 +34,11 @@ class Main extends React.Component {
     onClickOpenDialog(type) {
         const { PortfolioDialogAction } = this.props;
 
-        PortfolioDialogAction.setPortfolioDialog(true, EnumPortfolioProject(type));
+        PortfolioDialogAction.setPortfolioDialog(true, type);
     }
 
     render() {
+        const { t } = this.props;
         const { filterTypeSelected } = this.state;
 
         return (
@@ -49,17 +50,17 @@ class Main extends React.Component {
                                 <div className="row">
                                     <div className="about-section">
                                         <div className="col-12" style={{ marginTop: '30px' }}>
-                                            <div className='text-header-primary'>Thiwat</div>
-                                            <div className='text-header-normal'>Piyasupkij</div>
+                                            <div className='text-header-primary'>{t('page.about-section.text-first-name')}</div>
+                                            <div className='text-header-normal'>{t('page.about-section.text-last-name')}</div>
                                         </div>
                                         <div className="col-12">
                                             <div className="text-header-sub">
-                                                Learning, Doing, <a style={{ color: 'lightseagreen' }}>Create New Possibilities</a>
+                                                {t('page.about-section.text-quotation')} <a style={{ color: 'lightseagreen' }}>{t('page.about-section.text-quotation2')}</a>
                                             </div>
                                         </div>
                                         <div className="col-6">
                                             <div className="text-sentence">
-                                                I am a Full Stack Web Developer with over 4 years of experience, collaborating with leading banking partners in Thailand. With the skills and abilities I possess, I am confident in contributing to achieving the goals and success of the team.
+                                                {t('page.about-section.text-subject')}
                                             </div>
                                         </div>
                                     </div>
@@ -70,40 +71,40 @@ class Main extends React.Component {
                                     <div className="experience-section">
                                         <div className="background-cover-experience-section">
                                             <div className="col-12">
-                                                <div className="text-header-center-experience-section">Experience</div>
+                                                <div className="text-header-center-experience-section">{t('page.experience-section.text-title')}</div>
                                             </div>
                                             <div className="col-12">
                                                 <div class="mb-5 heading-border-white" />
                                             </div>
                                             <div className="col-12">
                                                 <div className="text-header-subject-experience-section">
-                                                    <i className="fa fa-laptop" /> Full Stack Web Developer
+                                                    <i className="fa fa-laptop" /> {t('page.experience-section.text-topic')}
                                                 </div>
-                                                <div className="text-header-sub-subject-experience-section">October 2018 - Present</div>
+                                                <div className="text-header-sub-subject-experience-section">{t('page.experience-section.text-work-period')}</div>
                                             </div>
                                             <div className="col-12">
                                                 <div className="text-subject-experience-section">
-                                                    Hatari NEXT and CODE-D 789 are the companies where I began my career as a programmer. They specialize in digital business at the organizational level, with over 10 years of expertise. I have had the privilege of working with them on various projects, including the development of organizational software, mobile applications, and websites. These projects are intricately integrated with the core-banking system of a globally renowned Thai financial institution.
-                                                </div>
-                                            </div>
-                                            <div className="col-12">
-                                                <div className="text-subject-experience-section">
-                                                    Some notable projects I have contributed to include the Marketplace website for KMA App of KrungSri Ayudhya Bank, WPF STEL for counter staff of Siam Commercial Bank, and the Seanheng website for managing the online business of a company's vendors.
+                                                    {t('page.experience-section.text-subject-paragraf1')}
                                                 </div>
                                             </div>
                                             <div className="col-12">
                                                 <div className="text-subject-experience-section">
-                                                    Over the course of my four-year collaboration with them, I have had the opportunity to develop both hard and soft skills. This experience has opened doors for skill enhancement and has allowed me to showcase my abilities through successful project developments. I genuinely appreciate everyone in the company, as I believe reaching this point would not have been possible without the teamwork and collective efforts.
+                                                    {t('page.experience-section.text-subject-paragraf2')}
                                                 </div>
                                             </div>
                                             <div className="col-12">
                                                 <div className="text-subject-experience-section">
-                                                    Looking for a new job this time, I see this as an opportunity for mutual acquaintance and learning. I am confident that my skills and experiences can contribute to solving problems and propel the organization toward its goals. I hope for the chance to work together. Thank you
+                                                    {t('page.experience-section.text-subject-paragraf3')}
+                                                </div>
+                                            </div>
+                                            <div className="col-12">
+                                                <div className="text-subject-experience-section">
+                                                    {t('page.experience-section.text-subject-paragraf4')}
                                                 </div>
                                             </div>
                                             <div className="col-12">
                                                 <div className="text-subject-experience-section" style={{ textAlign: 'end' }}>
-                                                    Thiwat Piyasupkij
+                                                    {t('page.experience-section.text-subject-paragraf5')}
                                                 </div>
                                             </div>
                                         </div>
@@ -114,103 +115,103 @@ class Main extends React.Component {
                                 <div className="row">
                                     <div className="portfolio-section">
                                         <div className="col-12">
-                                            <div className="text-header-center">Portfolio</div>
+                                            <div className="text-header-center">{t('page.portfolio-section.text-title')}</div>
                                         </div>
                                         <div className="col-12">
                                             <div class="mb-5 heading-border-black" />
                                         </div>
                                         <div className="col-12">
                                             <div class="port-head-cont-portfolio-section">
-                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(0)}>All</button>
-                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(1)}>Web Apps</button>
-                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(2)}>Web Backend</button>
-                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(3)}>Window Apps</button>
-                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(4)}>Class Library</button>
-                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(5)}>Workshop</button>
+                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(0)}>{t('page.portfolio-section.text-btn-all')}</button>
+                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(1)}>{t('page.portfolio-section.text-btn-web-apps')}</button>
+                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(2)}>{t('page.portfolio-section.text-btn-web-backend')}</button>
+                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(3)}>{t('page.portfolio-section.text-btn-window-apps')}</button>
+                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(4)}>{t('page.portfolio-section.text-btn-class-library')}</button>
+                                                <button className="btn-general-portfolio-section" onClick={() => this.onClickFilter(5)}>{t('page.portfolio-section.text-btn-workshop')}</button>
                                             </div>
                                         </div>
                                         <div className="col-12">
                                             <div class="row row-image-portfolio-section">
                                                 <div className="col-4 column-image-portfolio-section" style={filterTypeSelected === 0 || filterTypeSelected === 1 ? null : { display: 'none' }}>
-                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog('KMA Marketplace')}>
+                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog(1)}>
                                                         <div className="caption-port-content">
                                                             <div className="fa fa-search-plus fa-3x" />
                                                         </div>
                                                     </div>
                                                     <img className="image-portfolio-section" src={require('../../Assets/Images/portfolio-kma-marketplace-image1.jpg')} />
-                                                    <div className="text-image-portfolio-section">KMA Marketplace</div>
+                                                    <div className="text-image-portfolio-section">{t('page.portfolio-section.text-project1')}</div>
                                                 </div>
                                                 <div className="col-4 column-image-portfolio-section" style={filterTypeSelected === 0 || filterTypeSelected === 1 ? null : { display: 'none' }}>
-                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog('KA Auto Softkeypad')}>
+                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog(2)}>
                                                         <div className="caption-port-content">
                                                             <div className="fa fa-search-plus fa-3x" />
                                                         </div>
                                                     </div>
-                                                    <img className="image-portfolio-section" src={require('../../Assets/Images/portfolio-ka-auto-softkeypad-image1.jpg')} />
-                                                    <div className="text-image-portfolio-section">KA Auto Softkeypad</div>
+                                                    <img className="image-portfolio-section" src={require('../../Assets/Images/portfolio-ka-auto-smartq-image1.jpg')} />
+                                                    <div className="text-image-portfolio-section">{t('page.portfolio-section.text-project2')}</div>
                                                 </div>
                                                 <div className="col-4 column-image-portfolio-section" style={filterTypeSelected === 0 || filterTypeSelected === 1 ? null : { display: 'none' }}>
-                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog('Ekyc App')}>
+                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog(3)}>
                                                         <div className="caption-port-content">
                                                             <div className="fa fa-search-plus fa-3x" />
                                                         </div>
                                                     </div>
                                                     <img className="image-portfolio-section" src={require('../../Assets/Images/portfolio-ekyc-app-image2.jpg')} />
-                                                    <div className="text-image-portfolio-section">Ekyc App</div>
+                                                    <div className="text-image-portfolio-section">{t('page.portfolio-section.text-project3')}</div>
                                                 </div>
                                                 <div className="col-4 column-image-portfolio-section" style={filterTypeSelected === 0 || filterTypeSelected === 1 ? null : { display: 'none' }}>
-                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog('Seanheng Chatbot')}>
+                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog(4)}>
                                                         <div className="caption-port-content">
                                                             <div className="fa fa-search-plus fa-3x" />
                                                         </div>
                                                     </div>
                                                     <img className="image-portfolio-section" src={require('../../Assets/Images/portfolio-seanheng-image1.jpg')} />
-                                                    <div className="text-image-portfolio-section">Seanheng Chatbot</div>
+                                                    <div className="text-image-portfolio-section">{t('page.portfolio-section.text-project4')}</div>
                                                 </div>
                                                 <div className="col-4 column-image-portfolio-section" style={filterTypeSelected === 0 || filterTypeSelected === 4 ? null : { display: 'none' }}>
-                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog('Thai Smart Card Reader Library')}>
+                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog(5)}>
                                                         <div className="caption-port-content">
                                                             <div className="fa fa-search-plus fa-3x" />
                                                         </div>
                                                     </div>
                                                     <img className="image-portfolio-section" style={{ border: '1px solid' }} src={require('../../Assets/Images/portfolio-thai-smart-card-reader-library-image1.jpg')} />
-                                                    <div className="text-image-portfolio-section">Thai Smart Card Reader Library</div>
+                                                    <div className="text-image-portfolio-section">{t('page.portfolio-section.text-project5')}</div>
                                                 </div>
                                                 <div className="col-4 column-image-portfolio-section" style={filterTypeSelected === 0 || filterTypeSelected === 3 ? null : { display: 'none' }}>
-                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog('WPF Smart Teller')}>
+                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog(6)}>
                                                         <div className="caption-port-content">
                                                             <div className="fa fa-search-plus fa-3x" />
                                                         </div>
                                                     </div>
-                                                    <img className="image-portfolio-section" src={require('../../Assets/Images/portfolio-wpf-stel-image1.jpg')} />
-                                                    <div className="text-image-portfolio-section">WPF Smart Teller</div>
+                                                    <img className="image-portfolio-section" src={require('../../Assets/Images/portfolio-scb-stel-image1.jpg')} />
+                                                    <div className="text-image-portfolio-section">{t('page.portfolio-section.text-project6')}</div>
                                                 </div>
                                                 <div className="col-4 column-image-portfolio-section" style={filterTypeSelected === 0 || filterTypeSelected === 2 ? null : { display: 'none' }}>
-                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog('Kbol Backend FX Special Rate (SWIFT)')}>
+                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog(7)}>
                                                         <div className="caption-port-content">
                                                             <div className="fa fa-search-plus fa-3x" />
                                                         </div>
                                                     </div>
                                                     <img className="image-portfolio-section" src={require('../../Assets/Images/portfolio-kbol-backend-fx-special-rate-image1.jpg')} />
-                                                    <div className="text-image-portfolio-section">Kbol Backend FX Special Rate (SWIFT)</div>
+                                                    <div className="text-image-portfolio-section">{t('page.portfolio-section.text-project7')}</div>
                                                 </div>
                                                 <div className="col-4 column-image-portfolio-section" style={filterTypeSelected === 0 || filterTypeSelected === 4 ? null : { display: 'none' }}>
-                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog('Giving Forward Api Adapter Library')}>
+                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog(8)}>
                                                         <div className="caption-port-content">
                                                             <div className="fa fa-search-plus fa-3x" />
                                                         </div>
                                                     </div>
                                                     <img className="image-portfolio-section" src={require('../../Assets/Images/portfolio-giving-forward-image1.jpg')} />
-                                                    <div className="text-image-portfolio-section">Giving Forward Api Adapter Library</div>
+                                                    <div className="text-image-portfolio-section">{t('page.portfolio-section.text-project8')}</div>
                                                 </div>
                                                 <div className="col-4 column-image-portfolio-section" style={filterTypeSelected === 0 || filterTypeSelected === 5 ? null : { display: 'none' }}>
-                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog('Skill Development Workshop')}>
+                                                    <div className="caption-port" onClick={() => this.onClickOpenDialog(9)}>
                                                         <div className="caption-port-content">
                                                             <div className="fa fa-search-plus fa-3x" />
                                                         </div>
                                                     </div>
                                                     <img className="image-portfolio-section" src={require('../../Assets/Images/portfolio-skill-development-workshop-image1.jpg')} />
-                                                    <div className="text-image-portfolio-section">Skill Development Workshop</div>
+                                                    <div className="text-image-portfolio-section">{t('page.portfolio-section.text-project9')}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -221,7 +222,7 @@ class Main extends React.Component {
                                 <div className="row">
                                     <div className="skills-section">
                                         <div className="col-12">
-                                            <div className="text-header-center">Skills</div>
+                                            <div className="text-header-center">{t('page.skills-section.text-title')}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -230,7 +231,7 @@ class Main extends React.Component {
                                 <div className="row">
                                     <div className="contact-section">
                                         <div className="col-12">
-                                            <div className="text-header-center">Contact</div>
+                                            <div className="text-header-center">{t('page.contact-section.text-title')}</div>
                                         </div>
                                     </div>
                                 </div>

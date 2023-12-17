@@ -120,7 +120,6 @@
     height: 5px;
     background-color: black;
     margin: 0 auto 20px auto;
-    margin-bottom: 20px;
 }
 
 .experience-section {
@@ -209,9 +208,78 @@
     width: 100%;
 }
 
+.image-portfolio-section-dialog {
+    background-color: black;
+    max-width: 600px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}
+
+.btn-close-portfolio-section {
+    color: white;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+    .btn-close-portfolio-section:hover, .btn-close-portfolio-section:focus {
+        background-color: slategray;
+        color: white;
+        cursor: pointer;
+    }
+
+.close-modal-portfolio-section {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+    .close-modal-portfolio-section .lr {
+        z-index: 1051;
+        width: 1px;
+        height: 75px;
+        margin-left: 35px;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: black;
+    }
+
+        .close-modal-portfolio-section .lr .rl {
+            z-index: 1052;
+            width: 1px;
+            height: 75px;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            background-color: black;
+        }
+
+
 .text-image-portfolio-section {
     text-align: center;
     font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 30px white;
+}
+
+.text-header-center-portfolio-section {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 0 0 30px white;

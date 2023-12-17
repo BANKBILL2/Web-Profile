@@ -26,6 +26,7 @@ class Sidebar extends Component {
     }
 
     render() {
+        const { t } = this.props;
         this.callJquery();
 
         return (
@@ -33,11 +34,11 @@ class Sidebar extends Component {
                 <div className="row sidebar-layout">
                     <div className="nav-sub">
                         <img className="img-profile rounded-circle" src={require('../../Assets/Images/profile.jpg')} />
-                        <a className="nav-text active" href="#about">About</a>
-                        <a className="nav-text" href="#experience">Experience</a>
-                        <a className="nav-text" href="#portfolio">Portfolio</a>
-                        <a className="nav-text" href="#skills">Skills</a>
-                        <a className="nav-text" href="#contact">Contact</a>
+                        <a className="nav-text active" href="#about">{t('component.sidebar.text-menu-about')}</a>
+                        <a className="nav-text" href="#experience">{t('component.sidebar.text-menu-experience')}</a>
+                        <a className="nav-text" href="#portfolio">{t('component.sidebar.text-menu-portfolio')}</a>
+                        <a className="nav-text" href="#skills">{t('component.sidebar.text-menu-skills')}</a>
+                        <a className="nav-text" href="#contact">{t('component.sidebar.text-menu-contact')}</a>
                     </div>
                 </div>
             </React.Fragment >

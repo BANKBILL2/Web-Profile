@@ -1,335 +1,120 @@
 ﻿{
   "component": {
-    "layout": {
-      "text-logout-error-message": "GetSession failed, Please login again."
-    },
-    "topbar": {
-      "text-date": "Date : ",
-      "text-time": "Time : ",
-      "text-branch": "Branch : ",
-      "text-staff-id": "Employee ID : ",
-      "text-station": "Station : ",
-      "text-logout": "Logout"
-    },
     "sidebar": {
-      "text-softkeypad-menu": "Softkeypad",
-      "text-oueue-list--menu": "Queue List",
-      "text-new-booking-menu": "Advance Booking",
-      "text-salesforce-menu": "Salesforce",
-      "text-booking-swift-menu": "Book Now"
+      "text-menu-about": "About",
+      "text-menu-experience": "Experience",
+      "text-menu-portfolio": "Portfolio",
+      "text-menu-skills": "Skills",
+      "text-menu-contact": "Contact"
     },
-    "loader": {
-      "text-loading": "Loading"
-    },
-    "alert-dialog": {
-      "button-primary": "Yes",
-      "button-secondary": "No",
-      "button-primary-unlock": "Allow",
-      "button-secondary-unlock": "Not Allow",
-      "button-primary-ok": "OK",
-      "button-secondary-cancel": "Cancel",
-      "button-close": "Close",
-      "button-retry": "Retry"
-    },
-    "counter-alert-dialog": {
-      "text-header": "Select Counter Number",
-      "button-primary": "Submit",
-      "button-secondary": "Cancel"
-    },
-    "customer-select-alert-dialog": {
-      "text-header-branch-contact": "Branch Contact",
-      "text-header-customer-name": "Customer Name",
-      "text-header-license-no": "Lincense-NO",
-      "button-primary": "OK",
-      "button-secondary": "Return"
-    },
-    "catch-error-alert-dialog": {
-      "text-header": "Not have catch in this time",
-      "text-header-error": "Catch Alert",
-      "text-close": "Close"
-    },
-    "pause-alert-dialog": {
-      "text-lunch-header": "If you want Pause Lunch",
-      "text-lunch-body": "The system will log out immediately.",
-      "text-toilet-header": "If you want Pause Toilet",
-      "text-callout-header": "If you want to Pause Call Out",
-      "text-followup-header": "If you want to Pause Follow Up",
-      "text-other-body": "Please press OK again to confirm.",
-      "button-primary": "OK",
-      "button-secondary": "NO"
-    },
-    "transfer-alert-dialog": {
-      "text-header": "Please select the service department for the transfer queue number ",
-      "text-transfer-group-option1": "Apply for a car loan",
-      "text-transfer-group-option2": "After-sales service ",
-      "button-primary": "Submit",
-      "button-secondary": "Cancel"
+    "portfolio-dialog": {
+      "project1": {
+        "text-project1-title": "KMA Marketplace",
+        "text-project1-subject": "The KMA Marketplace is one of the products offered by Krungsri Bank, providing services for online shopping through various merchants collaborating with the bank on the KMA app. The operation is in the form of a web application displayed on the web view of the KMA app. I have been involved in designing the project structure and initiating development in the first phase using the React.js library. The system is developed for four merchants, namely Major Cineplex for movie ticket reservations, HIS for tour package reservations, McDonald's for food ordering, and The Pizza Company.",
+        "text-project1-client": "Krungsri Bank",
+        "text-project1-date": "September 2019",
+        "text-project1-service": "Web Application (React.js)"
+      },
+      "project2": {
+        "text-project2-title": "Krungsri Auto SmartQ",
+        "text-project2-subject": "Krungsri Auto SmartQ is a queue management system developed by Krungsri Bank to facilitate the convenience of bank employees and enhance the speed of providing car loan services to customers at each branch. The system integrates various components, including Kiosk machines, a website, and services. I have been assigned the responsibility for the web application part called Softkeypad, which allows employees to call, pause, cancel queues, display customer information, and make advance queue reservations. This enables employees to use the system on browsers at the branch's computer. I have been involved in designing the project structure and development, which was completed using the React.js library.",
+        "text-project2-client": "Krungsri Bank",
+        "text-project2-date": "January 2021, November 2023",
+        "text-project2-service": "Web Application (React.js), Service (Asp.net C#)"
+      },
+      "project3": {
+        "text-project3-title": "Ekyc App",
+        "text-project3-subject": "The Ekyc App is an electronic identity verification and validation system developed by CODE-D 789 Company. It is designed to confirm and validate customer information and identity electronically. The service aims to address challenges faced by partners, particularly in the banking sector. The identity verification process involves checking information on the national identification card, confirming through OTP, and utilizing Face Recognition technology. The system operates through various components, including a website and services. I have been assigned the responsibility for the web application part and have been involved in designing the project structure and development. The development process was completed using the React.js library.",
+        "text-project3-client": "CODE-D 789",
+        "text-project3-date": "October 2021",
+        "text-project3-service": "Web Application (React.js)"
+      },
+      "project4": {
+        "text-project4-title": "Seanheng Chatbot",
+        "text-project4-subject": "The Seanheng Chatbot is a business management system developed by CODE-D 789 Company for online merchants. It is designed to be a product that facilitates convenience and addresses customer care challenges for online business owners. This backend system assists in product management, order management, and includes a Livechat system with a Chatbot to enhance convenience. It also handles document generation for receipts, shipping labels, and other documents in PDF format. I have been assigned the responsibility for the web application part and have been involved in designing the project structure. Additionally, I played a role in developing the core system of the mentioned web application. The development process was completed using the React.js library.",
+        "text-project4-client": "CODE-D 789",
+        "text-project4-date": "April 2021",
+        "text-project4-service": "Web Application (React.js)"
+      },
+      "project5": {
+        "text-project5-title": "Thai Smart Card Reader Library",
+        "text-project5-subject": "The Thai Smart Card Reader Library is a module developed for communicating with Thai national ID smart cards through a card reader. It utilizes the sending of Application Protocol Data Unit (APDU) commands to establish communication with the Chip/Smart Card Interface Devices (CCID) on the card, prompting it to return data. I was tasked with researching information and developing a class library to handle the functions of sending and receiving data in the form of a library, allowing other projects to access it. The library is written in Java.",
+        "text-project5-client": "CODE-D 789",
+        "text-project5-date": "November 2018",
+        "text-project5-service": "Class Library (Java)"
+      },
+      "project6": {
+        "text-project6-title": "SCB Smart Teller",
+        "text-project6-subject": "SCB Smart Teller is a large-scale financial transaction system of Siam Commercial Bank (SCB), developed to enhance convenience for bank employees and elevate the speed of customer service. I have been a part of this project in the team called STEL Existing, responsible for supporting and troubleshooting various issues faced by the company's development team during the development of this project. My role includes participating in system development according to the bank's requirements, such as developing the central system Transfer module using WPF (Windows Presentation Foundation) to allow other components to call its functions. I have also been involved in the development of services related to the Deposit, Withdrawal, and Transfer subsystems.",
+        "text-project6-client": "Siam Commercial Bank",
+        "text-project6-date": "June 2022",
+        "text-project6-service": "Team Support, WPF, Service (Java Springboot)"
+      },
+      "project7": {
+        "text-project7-title": "Kbol Backend FX Special Rate (SWIFT)",
+        "text-project7-subject": "The Kbol Backend FX Special Rate (SWIFT) is a backend system designed for managing transactions at Krungthai Bank. It is created to facilitate the convenience of the bank's team in providing services to business customers. In this project, my responsibility has been to develop the system based on the requirements provided by the bank, particularly in the Web Backend module using the Asp.net language. This module specifically deals with currency values and exchange rates between countries, encompassing the management of buy and sell orders, table display, and report generation for summary purposes.",
+        "text-project7-client": "Krungsri Bank",
+        "text-project7-date": "April 2020",
+        "text-project7-service": "Web Backend (Asp.net C#)"
+      },
+      "project8": {
+        "text-project8-title": "Giving Forward Api Adapter Library",
+        "text-project8-subject": "The Giving Forward Api Adapter Library is a module developed for interfacing with the Core Banking system of CODE-D 789 Company. It is utilized within the Giving Forward E-Commerce App. In this project, I have been tasked with developing the class to provide functions for sending and receiving data, structured as a library for other projects to utilize. The library is written in the C# programming language.",
+        "text-project8-client": "CODE-D 789",
+        "text-project8-date": "February 2019",
+        "text-project8-service": "Class Library (Asp.net C#)"
+      },
+      "project9": {
+        "text-project9-title": "Skill Development Workshop",
+        "text-project9-subject": "The Skill Development Workshop is a training program developed by CODE-D 789 Company to enhance the skills of its personnel. The workshop aims to promote learning and application of acquired skills in various projects. In this context, I have been responsible for designing and developing the curriculum for teaching fundamental web application development using React.js and basic desktop application development using WPF (Windows Presentation Foundation). The training is delivered through both workshop sessions and online teaching methods.",
+        "text-project9-client": "CODE-D 789",
+        "text-project9-date": "July 2020, March 2022",
+        "text-project9-service": "React.js Workshop, WPF Workshop"
+      },
+      "text-btn-close": "Close"
     }
   },
-  "web-function": {
-    "page-access": {
-      "text-message": "You don't have permission to access on this service. Please contact admin.",
-      "text-message2": "Session has expired."
-    }
-  },
-  "login": {
-    "alert-sql-injection-message": "Using script, Unable to proceed.",
-    "alert-error-message": "Loading user data failed. Please try again.",
-    "alert-error-message2": "Unable to login because this user has not registered an online store.",
-    "alert-error-message3": "Loading user role failed. Please try again.",
-    "alert-error-message4": "Please enter username and password",
-    "alert-error-message5": "Please enter password",
-    "alert-error-message6": "Please enter phone number or email",
-    "alert-error-message7": "The phone number or email or password was incorrect. System error, Please contact the system administrator.",
-    "alert-error-message8": "No url link for password recovery.",
-    "alert-error-message9": "This user does not have permission to access.",
-    "alert-error-message10": "Login Failed, Please try again."
-  },
-  "soft-key-pad": {
-    "text-page-queue-number": "Queue Number",
-    "text-page-service-time": "Service Time :",
-    "text-page-service-status": "Service Status :",
-    "text-page-service-type": "Service Type :",
-    "text-page-queue-count": "Waiting Queue :",
-    "text-page-queue": " Queue",
-    "text-page-customer-information": "Customer Information",
-    "text-page-customer-information-goapp": "Go App",
-    "text-page-customer-information-line": "Line",
-    "text-page-customer-information-casa": "CASA",
-    "text-page-customer-information-ocpb": "OCPB",
-    "text-page-customer-information-branch-contact": "Branch Contract : ",
-    "text-page-customer-information-bill-code": "Bill Code : ",
-    "text-page-customer-information-license-no": "License-No : ",
-    "text-page-customer-information-province": "Province : ",
-    "text-page-customer-information-brand-model": "Brand-Model : ",
-    "text-page-customer-information-contact-status": "Contact Status : ",
-    "text-page-customer-information-status-date": "Status Date : ",
-    "text-page-customer-information-register-date": "Car registration date : ",
-    "text-page-customer-information-expire-date": "Car tax expiration date : ",
-    "text-page-customer-information-address-sending": "Document sending address: ",
-    "text-page-customer-information-telno": "Telephone number : ",
-    "text-page-id": "ID: ",
-    "text-page-status": "Status",
-    "text-page-contact": "Contact",
-    "text-page-service-score": "Your Score :",
-    "text-page-queue-type": "Queue Type :",
-    "text-page-date-time": "Date Time :",
-    "text-page-staff-id": "Staff ID : ",
-    "text-page-no-data": "No Data",
-    "text-page-no-queue-list": "There is no queue for service yet",
-    "text-page-check-in-queue": "Do you want to check In queue ",
-    "text-page-check-in-queue2": " for confirm receive service ?",
-    "text-page-unlock-queue": "Do you want update queue ",
-    "text-page-unlock-queue2": " can be served by other staff ?",
-    "text-page-unlock-queue-success": "Unlock Queue ",
-    "text-page-unlock-queue-success2": " Success",
-    "text-page-booking-information": "Booking Information",
-    "text-page-remark": "Remark : ",
-    "text-page-staff-booking": "Staff Booking : ",
-    "text-page-staff-check-in": "Staff Check In : ",
-    "text-page-staff-reserve": "Staff Reserve : ",
-    "text-page-staff-unlock": "Staff Unlock : ",
-    "text-page-create-date-time": "Create Date Time : ",
-    "text-page-check-in-date-time": "Check In Date Time : ",
-    "text-page-reserve-date-time": "Reserve Date Time : ",
-    "text-page-unlock-date-time": "Unlock Date Time : ",
-    "text-page-reload-queue-list": "Updated : ",
-    "text-page-tooltip-next": "เรียกคิวถัดไป",
-    "text-page-tooltip-end": "จบคิว",
-    "text-page-tooltip-advance-booking": "จองคิวล่วงหน้า",
-    "text-page-tooltip-recall": "เรียกซ้ำ",
-    "text-page-tooltip-transfer": "โอนคิว",
-    "text-page-tooltip-hold": "พักคิว",
-    "text-page-tooltip-cancel": "ยกเลิกคิว",
-    "text-page-tooltip-edit": "แก้ไขคิว",
-    "text-page-tooltip-unlock": "ปลดล็อคคิว",
-    "text-page-tooltip-unlock-success": "ปลดล็อคแล้ว",
-    "text-page-tooltip-attach-files": "ไฟล์แนบ",
-    "text-page-tooltip-remark": "หมายเหตุ",
-    "text-page-tooltip-waiting-check-in": "ยืนยันเข้ารับบริการ",
-    "text-page-tooltip-reload-list": "โหลดรายการคิวใหม่",
-    "text-page-station": "Station : ",
-    "button-next": "Next",
-    "button-end": "End",
-    "button-advance-booking": "Advance Booking",
-    "button-recall": "Recall",
-    "button-hold": "Hold",
-    "button-transfer": "Transfer",
-    "button-cancel": "Cancel",
-    "button-pause": "Pause",
-    "button-unpause": "Unpause"
-  },
-  "booking-list": {
-
-  },
-  "queue-list": {
-    "text-page-search": "Search",
-    "text-page-date-from": "Date From :",
-    "text-page-to": "To :",
-    "text-page-cust-mobile-no": "Cust.Mobile No. :",
-    "text-page-queue-type": "Queue Type : ",
-    "text-page-service": "Service : ",
-    "text-page-staff-id": "Staff Id : ",
-    "text-page-queue-status": "Queue Status : ",
-    "text-page-queue-record": "Record(s)",
-    "text-page-queue-record2": "Queue",
-    "text-page-date-time": "Date Time : ",
-    "text-page-booking-time": "Booking Time : ",
-    "text-page-wait-time": "Wait Time : ",
-    "text-page-service-type": "Service Type : ",
-    "text-page-transferred-queue": "Transferred Queue : ",
-    "text-page-staff-reservation": "Staff Reservation : ",
-    "text-page-fininsh-time": "Finish Time :",
-    "text-page-booking-information": "Booking Information",
-    "text-page-remark": "Remark : ",
-    "text-page-staff-booking": "Staff Booking : ",
-    "text-page-staff-check-in": "Staff Check In : ",
-    "text-page-staff-reserve": "Staff Reserve : ",
-    "text-page-staff-unlock": "Staff Unlock : ",
-    "text-page-create-date-time": "Create Date Time : ",
-    "text-page-check-in-date-time": "Check In Date Time : ",
-    "text-page-reserve-date-time": "Reserve Date Time : ",
-    "text-page-unlock-date-time": "Unlock Date Time : ",
-    "text-page-no-queue-list": "There is no queue for service yet",
-    "text-page-error": "Using script, Unable to proceed.",
-    "text-page-error2": "List search data is empty, Please try again.",
-    "text-page-error3": "Date From value invalid, Please try again.",
-    "text-page-error4": "Date To value invalid, Please try again.",
-    "text-page-error5": "Queue Type value invalid, Please try again.",
-    "text-page-error6": "Service Type value invalid, Please try again.",
-    "text-page-error7": "Queue Status value invalid, Please try again.",
-    "text-page-error8": "BranchCode value invalid, Please try again.",
-    "text-page-error9": "Staff Id format invalid, Please try again.",
-    "text-page-error10": "Cust.Mobile No. format invalid, Please try again.",
-    "text-page-check-in-queue": "Do you want to check In queue ",
-    "text-page-check-in-queue2": " for confirm receive service.",
-    "text-page-unlock-queue": "Do you want update queue ",
-    "text-page-unlock-queue2": " can be served by other staff ?",
-    "text-page-unlock-queue-success": "Unlock Queue ",
-    "text-page-unlock-queue-success2": " Success",
-    "text-page-cancel-queue": "Do you want cancel queue ",
-    "text-page-cancel-queue2": " ?",
-    "text-page-cancel-queue-success": "Cancel Queue ",
-    "text-page-cancel-queue-success2": " Success",
-    "text-page-cancel-queue-failed": "Call Service onCancelQueueByEmp Failed",
-    "text-page-tooltip-edit": "แก้ไขคิว",
-    "text-page-tooltip-unlock": "ปลดล็อคคิว",
-    "text-page-tooltip-unlock-success": "ปลดล็อคแล้ว",
-    "text-page-tooltip-cancel": "ยกเลิกคิว",
-    "text-page-tooltip-remark": "หมายเหตุ",
-    "text-page-tooltip-waiting-check-in": "ยืนยันเข้ารับบริการ",
-    "button-clear": "Clear",
-    "button-search": "Search"
-  },
-  "booking": {
-    "advance-booking": {
-      "header": "Advance Booking",
-      "header-edit": "Edit Advance Booking",
-      "input-name": "Name : ",
-      "input-name-placeholder": "Customer Name",
-      "input-name-error1": "Thai characters and English characters only",
-      "input-surname": "Surname : ",
-      "input-surname-placeholder": "Customer Surname",
-      "input-surname-error1": "Thai characters and English characters only",
-      "input-customer-mobile-no": "Cust.Mobile No. : ",
-      "input-customer-mobile-no-placeholder": "Enter Phone Number",
-      "input-customer-mobile-no-error1": "Numbers 0-9 only",
-      "input-date": "Appointment Date : ",
-      "input-date-placeholder": "DD/MM/YYYY",
-      "input-time": "Time : ",
-      "input-time-placeholder": "Choose Appointment",
-      "input-service-type": "Service Type : ",
-      "input-service-type-placeholder": "Choose Service Type",
-      "input-contact-number": "Contact Number",
-      "input-contact-number-placeholder": "Contact Number",
-      "input-car-registration-number": "Car Registration Number",
-      "input-car-registration-number-placeholder": "Car Registration Number",
-      "input-province": "Province : ",
-      "input-province-placeholder": "Choose Province",
-      "input-remark": "Remark : ",
-      "input-remark-placeholder": "Max 150 Characters",
-      "input-remark-error1": "Thai characters, English letters, numbers, spaces, underscores, commas and dots only",
-      "checkbox-lock-employee": "The service will receive with staff code {employeeID} only",
-      "checkbox-google-map": "Send Google Map Link",
-      "button-cancel": "Cancel",
-      "button-booking": "Booking",
-      "button-delete": "Delete",
-
-      "popup-call-service-error": "Call Service {ServiceName} Error",
-      "popup-header-invalid-error": "Queue information is invalid",
-      "popup-request-queue-error-1": "เบอร์ {SmsPhoneNumber}  มีหมายเลขคิว {QueueNumber} ที่ยังรอรับบริการอยู่ คุณต้องการยกเลิกคิวเดิมเพื่อจองคิวใหม่ ?",
-      "popup-update-queue-1": "คุณต้องการแก้ไขจองคิวล่วงหน้า ?",
-      "popup-update-queue-2": "คุณต้องการแก้ไข/เลื่อนคิวเดิม เพื่อจองคิวใหม่ ?",
-      "popup-cancel-queue": "คุณต้องการยกเลิกคิว {QueueNumber} ?"
-
+  "page": {
+    "about-section": {
+      "text-first-name": "Thiwat",
+      "text-last-name": "Piyasupkij",
+      "text-quotation": "Learning, Doing,",
+      "text-quotation2": "Create New Possibilities",
+      "text-subject": "I am a Full Stack Web Developer with over 4 years of experience, collaborating with leading banking partners in Thailand. With the skills and abilities I possess, I am confident in contributing to achieving the goals and success of the team."
     },
-    "booking-result": {
-      "header-1": "Booking Success",
-      "header-2": "Update Success",
-      "header-3": "Cancel Success",
-      "employee-id": "Staff Id : {employeeID}",
-      "branch-name": "Branch : {branchName}",
-      "queue-number": "Queue No.",
-      "transaction-desc": "Service Type : ",
-      "reserve-date-time": "Booking Date : {date} time : {time}",
-      "phone-number": "Mobile No. ",
-      "contact-number": "Contact Number : ",
-      "car-registration-number": "Car Registration Number : ",
-      "province": "Province : ",
-      "remark": "Remark : ",
-      "create-reserve-date": "Transaction Date : ",
-      "booking-button": "New Booking",
-      "home-button": "Back To Home"
+    "experience-section": {
+      "text-title": "Experience",
+      "text-topic": "Full Stack Web Developer",
+      "text-work-period": "October 2018 - Present",
+      "text-subject-paragraf1": "Hatari NEXT and CODE-D 789 are the companies where I began my career as a programmer. They specialize in digital business at the organizational level, with over 10 years of expertise. I have had the privilege of working with them on various projects, including the development of organizational software, mobile applications, and websites. These projects are intricately integrated with the core-banking system of a globally renowned Thai financial institution.",
+      "text-subject-paragraf2": "Some notable projects I have contributed to include the Marketplace website for KMA App of KrungSri Ayudhya Bank, WPF STEL for counter staff of Siam Commercial Bank, and the Seanheng website for managing the online business of a company's vendors.",
+      "text-subject-paragraf3": "Over the course of my four-year collaboration with them, I have had the opportunity to develop both hard and soft skills. This experience has opened doors for skill enhancement and has allowed me to showcase my abilities through successful project developments. I genuinely appreciate everyone in the company, as I believe reaching this point would not have been possible without the teamwork and collective efforts.",
+      "text-subject-paragraf4": "Looking for a new job this time, I see this as an opportunity for mutual acquaintance and learning. I am confident that my skills and experiences can contribute to solving problems and propel the organization toward its goals. I hope for the chance to work together. Thank you",
+      "text-subject-paragraf5": "Thiwat Piyasupkij"
     },
-    "booking-swift": {
-      "text-page-book-now": "Book Now",
-      "text-page-cust-mobile-no": "Cust.Mobile No. : ",
-      "text-page-group-type": "Group Type : ",
-      "text-page-service-type": "Service Type : ",
-      "text-page-require-filed": "Mobile No. is require filed, Please try again.",
-      "text-page-require-filed2": "Group Type is require filed, Please try again.",
-      "text-page-require-filed3": "Service Type is require filed, Please try again.",
-      "text-page-error": "Mobile No. format invalid, Please try again.",
-      "text-page-error2": "Using script, Unable to proceed.",
-      "text-page-error3": "Call Service Request Queue Error",
-      "text-page-error4": "Call Service ListEnableKioskMenuByBranch Error, Please Try again.",
-      "text-page-placeholder": "Select Group",
-      "text-page-placeholder2": "Select Service",
-      "button-cancel": "Cancel",
-      "button-booking": "Booking"
+    "portfolio-section": {
+      "text-title": "Portfolio",
+      "text-btn-all": "All",
+      "text-btn-web-apps": "Web Apps",
+      "text-btn-web-backend": "Web Backend",
+      "text-btn-window-apps": "Window Apps",
+      "text-btn-class-library": "Class Library",
+      "text-btn-workshop": "Workshop",
+      "text-project1": "KMA Marketplace",
+      "text-project2": "Krungsri Auto SmartQ",
+      "text-project3": "Ekyc App",
+      "text-project4": "Seanheng Chatbot",
+      "text-project5": "Thai Smart Card Reader Library",
+      "text-project6": "SCB Smart Teller",
+      "text-project7": "Kbol Backend FX Special Rate (SWIFT)",
+      "text-project8": "Giving Forward Api Adapter Library",
+      "text-project9": "Skill Development Workshop"
     },
-    "booking-swift-result": {
-      "text-page-booking-successed": "Booking Success",
-      "text-page-queue-no": "Queue No. :",
-      "text-page-waiting-queue": "Have a waiting queue before you :",
-      "text-page-queue": "queue",
-      "text-page-service-type": "Service Type :",
-      "text-page-transaction-date": "Date - Time the transaction was made :",
-      "button-new-booking": "New Booking",
-      "button-back-to-main-page": "Back to Main Page"
-    }
-  },
-  "helper-function": {
-    "check-email-format": {
-      "text-message": "Email format not correct."
+    "skills-section": {
+      "text-title": "Skills"
     },
-    "check-mobile-number-thai-format": {
-      "text-message": "Please enter only 10 digit numbers.",
-      "text-message2": "Please enter your contact number beginning with 0 number.",
-      "text-message3": "Unable to enter a contact number starting with 02. Please try again.",
-      "text-message4": "Unable to enter a contact number starting with 03. Please try again.",
-      "text-message5": "Unable to enter a contact number starting with 04. Please try again.",
-      "text-message6": "Unable to enter a contact number starting with 05. Please try again.",
-      "text-message7": "Unable to enter a contact number starting with 07. Please try again.",
-      "text-message8": "Unable to enter a contact number starting with 07. Please try again.",
-      "text-message9": "Please enter only digit numbers.",
-      "text-message10": "Please enter the mobile phone number only 10 digits. (Beginning with 06, 08 and 09)",
-      "text-message11": "Please enter the phone number only 9 digits. (Beginning with 02, 03, 04, 05 and 07)",
-      "text-message12": "Unable to enter a contact number starting with 00. Please try again.",
-      "text-message13": "Please enter a mobile numbers."
-    },
-    "check-contact-number-format": {
-      "text-message": "Please enter the contract number with all 7 digits."
+    "contact-section": {
+      "text-title": "Contact"
     }
   }
 }
