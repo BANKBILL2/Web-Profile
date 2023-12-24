@@ -319,9 +319,55 @@
         }
 
 .skills-section {
-    height: 100vh;
-    background-color: ghostwhite;
+    height: 205vh;
+    padding-left: 0px;
+    background-image: url(../Images/skill-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.background-cover-skill-section {
+    background: rgba(1,1,1, 0.3);
+    height: 205vh;
+}
+
+.text-header-center-skill-section {
+    color: white;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 30px black;
+}
+
+.skill-item-image-cover-skill-section {
+    height: 100px;
+    display: inline-flex;
+    flex-flow: column-reverse;
+    justify-content: center;
+}
+
+.skill-item-image-skill-section {
+    max-height: 100px;
+}
+
+.skill-item-skill-section {
+    text-align: center;
+    min-height: 330px;
+    min-width: 250px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.78);
+}
+
+    .skill-item-skill-section h2 {
+        color: black;
+        font-size: 35px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-bottom: 1px;
+    }
 
 .contact-section {
     height: 100vh;
