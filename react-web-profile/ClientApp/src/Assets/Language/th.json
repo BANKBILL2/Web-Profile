@@ -76,21 +76,21 @@
   },
   "page": {
     "about-section": {
-      "text-first-name": "Thiwat",
-      "text-last-name": "Piyasupkij",
-      "text-quotation": "Learning, Doing,",
-      "text-quotation2": "Create New Possibilities",
-      "text-subject": "I am a Full Stack Web Developer with over 4 years of experience, collaborating with leading banking partners in Thailand. With the skills and abilities I possess, I am confident in contributing to achieving the goals and success of the team."
+      "text-first-name": "ทิวัตถ์",
+      "text-last-name": "ปิยศุภกิจ",
+      "text-quotation": "เรียนรู้, ลงมือทำ,",
+      "text-quotation2": "สร้างสรรค์ความเป็นไปได้ใหม่ๆ",
+      "text-subject": "ผมเป็น Full Stack Web Developer ที่มีประสบการณ์มากกว่า 4 ปี ทำงานร่วมกับพาร์ทเนอร์ธนาคารชั้นนำในประเทศไทย ด้วยทักษะและความสามารถที่ผมมี ผมมั่นใจว่าจะช่วยให้บรรลุเป้าหมายและความสำเร็จของทีม"
     },
     "experience-section": {
       "text-title": "Experience",
       "text-topic": "Full Stack Web Developer",
       "text-work-period": "October 2018 - Present",
-      "text-subject-paragraf1": "Hatari NEXT and CODE-D 789 are the companies where I began my career as a programmer. They specialize in digital business at the organizational level, with over 10 years of expertise. I have had the privilege of working with them on various projects, including the development of organizational software, mobile applications, and websites. These projects are intricately integrated with the core-banking system of a globally renowned Thai financial institution.",
-      "text-subject-paragraf2": "Some notable projects I have contributed to include the Marketplace website for KMA App of KrungSri Ayudhya Bank, WPF STEL for counter staff of Siam Commercial Bank, and the Seanheng website for managing the online business of a company's vendors.",
-      "text-subject-paragraf3": "Over the course of my four-year collaboration with them, I have had the opportunity to develop both hard and soft skills. This experience has opened doors for skill enhancement and has allowed me to showcase my abilities through successful project developments. I genuinely appreciate everyone in the company, as I believe reaching this point would not have been possible without the teamwork and collective efforts.",
-      "text-subject-paragraf4": "Looking for a new job this time, I see this as an opportunity for mutual acquaintance and learning. I am confident that my skills and experiences can contribute to solving problems and propel the organization toward its goals. I hope for the chance to work together. Thank you",
-      "text-subject-paragraf5": "Thiwat Piyasupkij"
+      "text-subject-paragraf1": "Hatari NEXT และ CODE-D 789 เป็นเครือบริษัทที่ผมเริ่มต้นทำงานในสายงานโปรแกรมเมอร์ พวกเขาเชี่ยวชาญด้านธุรกิจดิจิทัลระดับองค์กรมามากกว่า 10 ปี ผมได้มีส่วนร่วมในการทำงานกับพวกเขา ทั้งการพัฒนาซอฟต์แวร์องค์กร แอปพลิเคชันบนมือถือ และเว็บไซต์ ซึ่งมีการบูรณาการอย่างแนบแน่นเข้ากับระบบ core-bank ของสถาบันการเงินไทยที่มีชื่อเสียงระดับโลก",
+      "text-subject-paragraf2": "ผลงานเด่นๆ ที่ผมได้มีส่วนร่วมพัฒนาด้วย อาทิเช่น Website Marketplace สำหรับ App KMA ของธนาคารกรุงศรีอยุธยา,  WPF STEL สำหรับพนักงานเคานฺเตอร์ของธนาคารไทยพาณิชย์, Website Seanheng สำหรับจัดการธุรกิจสำหรับผู้ขายของออนไลน์ซึ่งเป็นผลิตภัณฑ์ของบริษัท เป็นต้น",
+      "text-subject-paragraf3": "จากประสบการณ์การทำงานถึง 4 ปี ที่ได้ทำงานร่วมกับพวกเขา ช่วยเปิดโอกาสในการพัฒนาทักษะและความสามารถด้านโปรแกรมเมอร์ทั้ง Hard Skill และ Soft Skill รวมถึงพิสูจน์ควา่มสามารถของผมผ่านผลงานที่พัฒนาขึ้นมาตลอดมาได้เป็นอย่างดี ซึ่งจะไม่มีวันมาถึงจุดนี้ได้หากขาดทีมและทุกๆ คนในบริษัท ผมรู้สึกขอบคุณพวกเขาจากใจจริง",
+      "text-subject-paragraf4": "การมองหางานใหม่ในครั้งนี้จะเป็นโอกาสให้ผมและคุณได้รู้จักกัน เรียนรู้ซึ่งกันและกัน ผมมั่นใจว่าทักษะและประสบการณ์ของผมจะช่วยคุณแก้ไขปัญหาและพาองค์กรไปสู่เป้าหมายตามที่ตั้งใจไว้ได้ครับ หวังว่าจะได้ร่วมงานกันครับ ขอบคุณ",
+      "text-subject-paragraf5": "ทิวัตถ์ ปิยศุภกิจ"
     },
     "portfolio-section": {
       "text-title": "Portfolio",
@@ -146,7 +146,14 @@
       "text-skill-desc16": "ทักษะการใช้งานโปรแกรม Vegas Pro ตัดต่อวีดีโอ เบื้องต้น"
     },
     "contact-section": {
-      "text-title": "Contact"
+      "text-title": "Contact",
+      "text-sentence": "ผมมีความยินดีกับทุกโอกาสที่เสนอเข้ามา หากต้องการติดต่อผม สามารถแจ้งเข้ามาได้เลย ขอบคุณครับ",
+      "text-name": "Full Name",
+      "text-email": "Email",
+      "text-subject": "Subject",
+      "text-message": "Message",
+      "text-phone": "Phone",
+      "text-btn-send": "SEND"
     }
   }
 }

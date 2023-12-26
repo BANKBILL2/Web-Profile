@@ -88,7 +88,7 @@
       "text-work-period": "October 2018 - Present",
       "text-subject-paragraf1": "Hatari NEXT and CODE-D 789 are the companies where I began my career as a programmer. They specialize in digital business at the organizational level, with over 10 years of expertise. I have had the privilege of working with them on various projects, including the development of organizational software, mobile applications, and websites. These projects are intricately integrated with the core-banking system of a globally renowned Thai financial institution.",
       "text-subject-paragraf2": "Some notable projects I have contributed to include the Marketplace website for KMA App of KrungSri Ayudhya Bank, WPF STEL for counter staff of Siam Commercial Bank, and the Seanheng website for managing the online business of a company's vendors.",
-      "text-subject-paragraf3": "Over the course of my four-year collaboration with them, I have had the opportunity to develop both hard and soft skills. This experience has opened doors for skill enhancement and has allowed me to showcase my abilities through successful project developments. I genuinely appreciate everyone in the company, as I believe reaching this point would not have been possible without the teamwork and collective efforts.",
+      "text-subject-paragraf3": "Over the course of my 4 year collaboration with them, I have had the opportunity to develop both hard and soft skills. This experience has opened doors for skill enhancement and has allowed me to showcase my abilities through successful project developments. I genuinely appreciate everyone in the company, as I believe reaching this point would not have been possible without the teamwork and collective efforts.",
       "text-subject-paragraf4": "Looking for a new job this time, I see this as an opportunity for mutual acquaintance and learning. I am confident that my skills and experiences can contribute to solving problems and propel the organization toward its goals. I hope for the chance to work together. Thank you",
       "text-subject-paragraf5": "Thiwat Piyasupkij"
     },
@@ -146,7 +146,14 @@
       "text-skill-desc16": "Basic skills in using Vegas Pro for video editing"
     },
     "contact-section": {
-      "text-title": "Contact"
+      "text-title": "Contact",
+      "text-sentence": "I am delighted with every opportunity presented to me. If you want to contact me You can inform us. Thank you.",
+      "text-name": "Full Name",
+      "text-email": "Email",
+      "text-subject": "Subject",
+      "text-message": "Message",
+      "text-phone": "Phone",
+      "text-btn-send": "SEND"
     }
   }
 }

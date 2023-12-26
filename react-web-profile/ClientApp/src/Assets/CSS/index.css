@@ -5,6 +5,22 @@
     overflow-x: hidden;
 }
 
+.topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    outline: none;
+    background-color: lightseagreen;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+}
+
 .sidebar-layout {
     background: black;
     height: 100vh;
@@ -34,12 +50,48 @@
             color: white;
         }
 
+    .sidebar-layout .text-language {
+        cursor: pointer;
+        color: rgba(255,255,255,.5);
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+        .sidebar-layout .text-language.active {
+            color: white;
+        }
+
     .sidebar-layout .img-profile {
         max-width: 10rem;
         max-height: 10rem;
         border: 0.5rem solid slategray;
         padding: unset;
         margin: 10px;
+    }
+
+    .sidebar-layout .header-icon {
+        float: left;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+        .sidebar-layout .header-icon:after {
+            content: "";
+            width: 0.5px;
+            height: 20px;
+            background: #ffffff;
+            position: absolute;
+        }
+
+    .sidebar-layout .line-container {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin-top: 20px;
     }
 
 .main-layout {
@@ -372,4 +424,65 @@
 .contact-section {
     height: 100vh;
     background-color: white;
+}
+
+.text-contact-section {
+    font-size: 1rem;
+}
+
+.con-form-contact-section input {
+    border-color: #ccc;
+    border-radius: 0;
+    color: #717171;
+    margin-top: 30px;
+}
+
+.con-form-contact-section textarea {
+    width: 100%;
+    height: 200px;
+    margin: 30px 0;
+    padding: 10px;
+    border-color: #ccc;
+    border-radius: 0;
+    color: #717171;
+}
+
+.btn-general-contact-section {
+    background-color: transparent;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-contact-section:hover {
+    text-decoration: none;
+}
+
+.btn-send-contact-section {
+    border-color: #000000;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+    .btn-send-contact-section:hover, .btn-white:focus {
+        background-color: slategray;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+.contact-box-desc-contact-section h3 i {
+    color: lightseagreen;
+}
+
+.contact-side-desc-contact-section {
+    padding-top: 40px;
+}
+
+.address-details-contact-section {
+    text-decoration: auto;
+    color: slategray;
 }

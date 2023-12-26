@@ -3,7 +3,6 @@ import LayoutMain from "../../Components/Layout/LayoutMain";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { translate } from 'react-switch-lang';
-import { EnumPortfolioProject } from '../../Helpers/Enum';
 import $ from "jquery";
 import PropTypes from 'prop-types';
 import PortfolioDialog from '../../Components/Dialog/PortfolioDialog';
@@ -265,9 +264,48 @@ class Main extends React.Component {
                             </section>
                             <section id="contact">
                                 <div className="row">
-                                    <div className="contact-section">
-                                        <div className="col-12">
-                                            <div className="text-header-center">{t('page.contact-section.text-title')}</div>
+                                    <div className="contact-section p-3 p-lg-5 d-flex flex-column">
+                                        <div className="text-header-center" style={{ margin: '0px 0px 50px 0px' }}>{t('page.contact-section.text-title')}</div>
+                                        <div className="row text-contact-section">
+                                            <div className="col-md-9">
+                                                <div class="heading-border-light"></div>
+                                                <p>{t('page.contact-section.text-sentence')}</p>
+                                                <div className="row con-form-contact-section">
+                                                    <div className="col-md-12">
+                                                        <input type="text" name="full-name" placeholder={t('page.contact-section.text-name')} className="form-control" />
+                                                    </div>
+                                                    <div className="col-md-12">
+                                                        <input type="text" name="email" placeholder={t('page.contact-section.text-email')} className="form-control" />
+                                                    </div>
+                                                    <div className="col-md-12">
+                                                        <input type="text" name="subject" placeholder={t('page.contact-section.text-subject')} className="form-control" />
+                                                    </div>
+                                                    <div className="col-md-12">
+                                                        <textarea placeholder={t('page.contact-section.text-message')} name="" id="" />
+                                                    </div>
+                                                    <div className="col-md-12 sub-but">
+                                                        <button className="btn-contact-section btn-general-contact-section btn-send-contact-section" role="button">{t('page.contact-section.text-btn-send')}</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-3 col-sm-12">
+                                                <div className="contact-cont2">
+                                                    <div className="contact-phone contact-side-desc-contact-section contact-box-desc-contact-section">
+                                                        <h3>
+                                                            <i class="fa fa-phone cl-atlantis fa-1x" /> {t('page.contact-section.text-phone')}
+                                                        </h3>
+                                                        <p>095-630-3856</p>
+                                                    </div>
+                                                    <div className="contact-mail contact-side-desc-contact-section contact-box-desc-contact-section">
+                                                        <h3>
+                                                            <i className="fa fa-envelope cl-atlantis fa-1x" /> {t('page.contact-section.text-email')}
+                                                        </h3>
+                                                        <address className="">
+                                                            Email: <a href="mailto:thiwatpiyasupkij@gmail.com" className="address-details-contact-section">thiwatpiyasupkij@gmail.com</a>
+                                                        </address>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

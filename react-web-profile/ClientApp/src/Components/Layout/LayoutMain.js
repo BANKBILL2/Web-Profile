@@ -7,6 +7,11 @@ import PropTypes from 'prop-types';
 
 class LayoutMain extends Component {
 
+    topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -20,6 +25,7 @@ class LayoutMain extends Component {
                         </div>
                     </div>
                 </div>
+                <button className="topBtn" onClick={() => this.topFunction()} id="topBtn" title="Go to top">Top</button>
             </React.Fragment >
         );
     }

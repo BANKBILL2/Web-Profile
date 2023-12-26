@@ -1,45 +1,54 @@
-import React, { Component } from 'react';
+﻿import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { translate } from 'react-switch-lang';
+import { setLanguage } from 'react-switch-lang';
 import PropTypes from 'prop-types';
-import $ from "jquery";
+import Scrollspy from 'react-scrollspy'
 import * as webAction from '../../Actions/Web/WebAction';
 
 class Sidebar extends Component {
 
-    callJquery() {
-        $(document).ready(async function () {
-            try {
-                $("body").click(function (event) {
-                    const classNa = $(event.target).attr('class');
+    async onChangeLanguage() {
+        const { WebAction, Language } = this.props;
 
-                    if (classNa === 'nav-text') {
-                        $(".nav-text").removeClass("active");
-                        $(event.target).addClass("active");
-                    }
-                });
-            } catch (error) {
-                console.log('Jquery Error');
-            }
-        });
+        if (Language.language !== 'th') {
+            WebAction.setWebLanguage('th');
+            setLanguage('th');
+        }
+        else {
+            WebAction.setWebLanguage('en');
+            setLanguage('en');
+        }
     }
 
     render() {
         const { t } = this.props;
-        this.callJquery();
 
         return (
             <React.Fragment>
                 <div className="row sidebar-layout">
-                    <div className="nav-sub">
+                    <Scrollspy
+                        className="nav-sub"
+                        currentClassName="active"
+                        items={['', 'about', 'experience', 'portfolio', 'skills', 'contact']}
+                        offset={-50}>
                         <img className="img-profile rounded-circle" src={require('../../Assets/Images/profile.jpg')} />
-                        <a className="nav-text active" href="#about">{t('component.sidebar.text-menu-about')}</a>
+                        <a className="nav-text" href="#about">{t('component.sidebar.text-menu-about')}</a>
                         <a className="nav-text" href="#experience">{t('component.sidebar.text-menu-experience')}</a>
                         <a className="nav-text" href="#portfolio">{t('component.sidebar.text-menu-portfolio')}</a>
                         <a className="nav-text" href="#skills">{t('component.sidebar.text-menu-skills')}</a>
                         <a className="nav-text" href="#contact">{t('component.sidebar.text-menu-contact')}</a>
-                    </div>
+                        <div className="line-container">
+                            <div className={this.props.Language.language === 'th' ? "text-language active" : "text-language"} onClick={() => this.onChangeLanguage()}>
+                                ไทย
+                            </div>
+                            <div className="header-icon" />
+                            <div className={this.props.Language.language === 'en' ? "text-language active" : "text-language"} onClick={() => this.onChangeLanguage()}>
+                                ENG
+                            </div>
+                        </div>
+                    </Scrollspy>
                 </div>
             </React.Fragment >
         );

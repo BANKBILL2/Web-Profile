@@ -17,8 +17,8 @@ class App extends Component {
     displayName = App.name;
 
     componentWillMount() {
-        setDefaultLanguage('en');
-        this.props.WebAction.setWebLanguage('en');
+        const { Language } = this.props;
+        setDefaultLanguage(Language.language);
     }
 
     render() {
