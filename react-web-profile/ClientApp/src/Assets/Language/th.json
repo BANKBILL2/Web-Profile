@@ -1,11 +1,24 @@
 {
   "component": {
+    "loader": {
+      "text-loading": "กำลังโหลด..."
+    },
     "sidebar": {
       "text-menu-about": "About",
       "text-menu-experience": "Experience",
       "text-menu-portfolio": "Portfolio",
       "text-menu-skills": "Skills",
       "text-menu-contact": "Contact"
+    },
+    "topbar": {
+      "text-menu-about": "About",
+      "text-menu-experience": "Experience",
+      "text-menu-portfolio": "Portfolio",
+      "text-menu-skills": "Skills",
+      "text-menu-contact": "Contact"
+    },
+    "alert-dialog": {
+      "text-btn-close": "Close"
     },
     "portfolio-dialog": {
       "project1": {
@@ -149,9 +162,18 @@
       "text-title": "Contact",
       "text-sentence": "ผมมีความยินดีกับทุกโอกาสที่เสนอเข้ามา หากต้องการติดต่อผม สามารถแจ้งเข้ามาได้เลย ขอบคุณครับ",
       "text-name": "Full Name",
+      "input-name-error": "ตัวอักษรภาษาไทยและตัวอักษรภาษาอังกฤษเท่านั้น",
+      "input-name-error2": "โปรดกรอกข้อมูลให้ครบถ้วน",
       "text-email": "Email",
+      "input-email-error": "รูปแบบอีเมล์ไม่ถูกต้อง",
+      "input-email-error2": "โปรดกรอกข้อมูลให้ครบถ้วน",
       "text-subject": "Subject",
+      "input-subject-error": "โปรดกรอกข้อมูลให้ครบถ้วน",
       "text-message": "Message",
+      "input-message-error": "โปรดกรอกข้อมูลให้ครบถ้วน",
+      "text-sql-injection-error": "มีการใช้ script ไม่สามารถดำเนินการต่อได้",
+      "text-send-data-success": "ส่งข้อมูลสำเร็จ",
+      "text-send-data-fail": "ส่งข้อมูลไม่สำเร็จเพราะ: ",
       "text-phone": "Phone",
       "text-btn-send": "SEND"
     }

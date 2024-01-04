@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { translate } from 'react-switch-lang';
-import { createMuiTheme, ThemeProvider, withStyles } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { EnumPortfolioProject } from '../../Helpers/Enum';
 import PropTypes from 'prop-types';
 import * as portfolioDialogAction from "../../Actions/Dialog/PortfolioDialogAction";
@@ -11,6 +11,21 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 
 export class PortfolioDialog extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            screenWidth: 0,
+        };
+        window.addEventListener('resize', this.updateScreenWidth);
+    }
+
+    componentDidMount() {
+        this.updateScreenWidth();
+    }
+
+    updateScreenWidth = () => {
+        this.setState({ screenWidth: window.innerWidth });
+    };
 
     onClickClose = (type) => {
         const { PortfolioDialogAction } = this.props;
@@ -43,7 +58,7 @@ export class PortfolioDialog extends React.Component {
     }
 
     render() {
-
+        const { screenWidth } = this.state;
         const { t, PortfolioDialog } = this.props;
         const theme = createMuiTheme({
             overrides: {
@@ -54,7 +69,9 @@ export class PortfolioDialog extends React.Component {
                     paperFullWidth: {
                         maxWidth: '1280px',
                         minHeight: '650px',
-                        borderRadius: '10px'
+                        borderRadius: '10px',
+                        overflowX: 'unset',
+                        paddingBottom: '20px'
                     }
                 },
                 MuiDialogContent: {
@@ -82,25 +99,29 @@ export class PortfolioDialog extends React.Component {
                                 <div className="col-12">
                                     <div className="text-header-center-portfolio-section">{t(`component.portfolio-dialog.project${PortfolioDialog.type}.text-project${PortfolioDialog.type}-title`)}</div>
                                     <div className="close-modal-portfolio-section" type="button" onClick={() => this.onClickClose(PortfolioDialog.type)}>
-                                        <div class="lr">
-                                            <div class="rl"></div>
+                                        <div className="lr">
+                                            <div className="rl"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-12">
-                                    <div class="mb-5 heading-border-black" />
+                                    <div className="mb-5 heading-border-black" />
                                 </div>
-                                <br />
-                                <div className="col-12" style={{ marginTop: '15px' }}>
+                                {screenWidth > 768 ?
+                                    <br />
+                                    :
+                                    null
+                                }
+                                <div className="col-12" style={{ marginTop: screenWidth > 768 ? '15px' : '' }}>
                                     <div className="row">
-                                        <div className="col-6" style={{ display: 'flex', justifyContent: 'center', paddingLeft: '75px' }}>
+                                        <div className="col-md-6 col-sm-12 image-portfolio-cover-section-dialog">
                                             <img className="image-portfolio-section-dialog" src={this.GetImagePath(PortfolioDialog.type)} />
                                         </div>
-                                        <div className="col-6" style={{ padding: '0px 75px 0px 35px' }}>
-                                            <p style={{ marginBottom: '30px' }}>
+                                        <div className="col-md-6 col-sm-12" style={{ padding: '0px 75px 0px 35px' }}>
+                                            <p className="image-portfolio-section-dialog-text-desc">
                                                 {t(`component.portfolio-dialog.project${PortfolioDialog.type}.text-project${PortfolioDialog.type}-subject`)}
                                             </p>
-                                            <ul style={{ listStyle: 'none', paddingLeft: '0px', marginBottom: '30px' }}>
+                                            <ul className="image-portfolio-section-dialog-text-detail">
                                                 <li>Client: <strong>{t(`component.portfolio-dialog.project${PortfolioDialog.type}.text-project${PortfolioDialog.type}-client`)}</strong></li>
                                                 <li>Date: <strong>{t(`component.portfolio-dialog.project${PortfolioDialog.type}.text-project${PortfolioDialog.type}-date`)}</strong></li>
                                                 <li>Service: <strong>{t(`component.portfolio-dialog.project${PortfolioDialog.type}.text-project${PortfolioDialog.type}-service`)}</strong></li>
@@ -113,9 +134,8 @@ export class PortfolioDialog extends React.Component {
                                 </div>
                             </div>
                         </DialogContent>
-                    </Dialog >
-                </ThemeProvider >
-                }
+                    </Dialog>
+                </ThemeProvider>
             </React.Fragment>
         );
     }
