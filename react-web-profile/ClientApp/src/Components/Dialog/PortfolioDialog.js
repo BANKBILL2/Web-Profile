@@ -70,7 +70,8 @@ export class PortfolioDialog extends React.Component {
                         maxWidth: '1280px',
                         minHeight: '650px',
                         borderRadius: '10px',
-                        overflowX: 'unset',
+                        overflowX: 'hidden',
+                        overflowY: 'auto',
                         paddingBottom: '20px'
                     }
                 },

@@ -65,11 +65,11 @@ class Topbar extends Component {
         return (
             <React.Fragment>
                 <nav className="navbar navbar-expand-lg navbar-dark topbar-layout" id="sideNav">
-                    <a className="navbar-brand js-scroll-trigger" href="#page-top">
+                    <div className="navbar-brand js-scroll-trigger">
                         <span className="topbar-title">
                             Profile
                         </span>
-                    </a>
+                    </div>
                     <div className="topbar-line-container">
                         <div className={Language.language === 'th' ? "text-language active" : "text-language"} onClick={() => this.onChangeLanguage()}>
                             ไทย

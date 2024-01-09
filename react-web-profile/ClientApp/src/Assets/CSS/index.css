@@ -344,12 +344,12 @@
 }
 
     .btn-general-portfolio-section:hover, .btn-general-portfolio-section:focus {
-        background-color: black;
-        color: white;
+        background-color: #000000;
+        color: #ffffff;
         cursor: pointer;
     }
 
-    .btn-general-portfolio-section .active {
+    .btn-general-portfolio-section.active {
         background-color: #000000;
         color: #ffffff;
     }
@@ -517,7 +517,7 @@
         }
 
 .skills-section {
-    min-height: 205vh;
+    min-height: 100vh;
     height: 100%;
     padding-left: 0px;
     background-image: url(../Images/skill-background.jpg);
@@ -527,7 +527,7 @@
 
 .background-cover-skill-section {
     background: rgba(1,1,1, 0.3);
-    min-height: 205vh;
+    min-height: 100vh;
     height: 100%;
 }
 

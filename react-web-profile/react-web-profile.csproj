@@ -34,7 +34,6 @@
     <Folder Include="ClientApp\src\Components\Dialog\" />
     <Folder Include="ClientApp\src\Components\Loader\" />
     <Folder Include="ClientApp\src\Helpers\" />
-    <Folder Include="ClientApp\src\Pages\Main\" />
     <Folder Include="ClientApp\src\Reducers\Dialog\" />
     <Folder Include="ClientApp\src\Reducers\Web\" />
   </ItemGroup>
