@@ -8,6 +8,7 @@
       "text-menu-experience": "Experience",
       "text-menu-portfolio": "Portfolio",
       "text-menu-skills": "Skills",
+      "text-menu-education": "Education",
       "text-menu-contact": "Contact"
     },
     "topbar": {
@@ -15,6 +16,7 @@
       "text-menu-experience": "Experience",
       "text-menu-portfolio": "Portfolio",
       "text-menu-skills": "Skills",
+      "text-menu-education": "Education",
       "text-menu-contact": "Contact"
     },
     "alert-dialog": {
@@ -157,6 +159,15 @@
       "text-skill-desc14": "ทักษะการใช้งานระบบ CMS สำหรับการจัดการเนื้อหาบน Website",
       "text-skill-desc15": "ทักษะการใช้งานโปรแกรม Adobe Photoshop ตกแต่ง, ตัดต่อรูปภาพ เบื้องต้น",
       "text-skill-desc16": "ทักษะการใช้งานโปรแกรม Vegas Pro ตัดต่อวีดีโอ เบื้องต้น"
+    },
+    "education-section": {
+      "text-title": "Education",
+      "text-date-swu": "June 2010 - March 2014",
+      "text-title-swu": "มหาวิทยาลัยศรีนครินทรวิโรฒ, ประเทศไทย",
+      "text-description-swu": "วิทยาศาสตรบัณฑิต (GPAX 3.32)",
+      "text-date-dpu": "June 2018 - August 2018",
+      "text-title-dpu": "มหาวิทยาลัยธุรกิจบัณฑิตย์, ประเทศไทย",
+      "text-description-dpu": "โครงการ Programmer Bootcamp #1 โดย บริษัท Hatari Wireless และภาควิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยธุรกิจบัณฑิตย์"
     },
     "contact-section": {
       "text-title": "Contact",

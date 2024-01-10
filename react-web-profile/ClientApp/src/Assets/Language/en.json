@@ -8,6 +8,7 @@
       "text-menu-experience": "Experience",
       "text-menu-portfolio": "Portfolio",
       "text-menu-skills": "Skills",
+      "text-menu-education": "Education",
       "text-menu-contact": "Contact"
     },
     "topbar": {
@@ -15,6 +16,7 @@
       "text-menu-experience": "Experience",
       "text-menu-portfolio": "Portfolio",
       "text-menu-skills": "Skills",
+      "text-menu-education": "Education",
       "text-menu-contact": "Contact"
     },
     "alert-dialog": {
@@ -157,6 +159,15 @@
       "text-skill-desc14": "Skills in using CMS systems for managing content on websites",
       "text-skill-desc15": "Basic skills in using Adobe Photoshop to decorate, edit images",
       "text-skill-desc16": "Basic skills in using Vegas Pro for video editing"
+    },
+    "education-section": {
+      "text-title": "Education",
+      "text-date-swu": "June 2010 - March 2014",
+      "text-title-swu": "Srinakharinwirot University, Thailand",
+      "text-description-swu": "Bachelor of Science (GPAX 3.32)",
+      "text-date-dpu": "June 2018 - August 2018",
+      "text-title-dpu": "Dhurakij Pundit University, Thailand",
+      "text-description-dpu": "Programmer Bootcamp #1 with Hatari Wireless Company & CITE@DPU"
     },
     "contact-section": {
       "text-title": "Contact",

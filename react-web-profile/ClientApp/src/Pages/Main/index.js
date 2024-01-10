@@ -4,6 +4,7 @@ import About_Section from './About_Section';
 import Experience_Section from './Experience_Section';
 import Portfolio_Section from './Portfolio_Section';
 import Skills_Section from './Skills_Section';
+import Education_Section from './Education_Section';
 import Contact_Section from './Contact_Section';
 
 class Main extends React.Component {
@@ -16,6 +17,7 @@ class Main extends React.Component {
                         <Experience_Section />
                         <Portfolio_Section />
                         <Skills_Section />
+                        <Education_Section />
                         <Contact_Section />
                     </div>
                 </LayoutMain >

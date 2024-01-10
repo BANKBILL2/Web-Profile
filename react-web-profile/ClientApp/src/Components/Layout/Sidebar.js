@@ -44,13 +44,14 @@ class Sidebar extends Component {
                     <Scrollspy
                         className="nav-sub"
                         currentClassName="active"
-                        items={['', 'about', 'experience', 'portfolio', 'skills', 'contact']}
-                        offset={-50}>
+                        items={['', 'about', 'experience', 'portfolio', 'skills', 'education', 'contact']}
+                        offset={-20}>
                         <img className="img-profile rounded-circle" src={require('../../Assets/Images/profile.jpg')} />
                         <a className="nav-text" href="#about">{t('component.sidebar.text-menu-about')}</a>
                         <a className="nav-text" href="#experience">{t('component.sidebar.text-menu-experience')}</a>
                         <a className="nav-text" href="#portfolio">{t('component.sidebar.text-menu-portfolio')}</a>
                         <a className="nav-text" href="#skills">{t('component.sidebar.text-menu-skills')}</a>
+                        <a className="nav-text" href="#education">{t('component.sidebar.text-menu-education')}</a>
                         <a className="nav-text" href="#contact">{t('component.sidebar.text-menu-contact')}</a>
                         <div className="sidebar-line-container">
                             <div className={Language.language === 'th' ? "text-language active" : "text-language"} onClick={() => this.onChangeLanguage()}>

@@ -88,7 +88,7 @@ class Topbar extends Component {
                         <Scrollspy
                             className="navbar-nav"
                             currentClassName="nav-item--active"
-                            items={['about', 'experience', 'portfolio', 'skills', 'contact']}
+                            items={['about', 'experience', 'portfolio', 'skills', 'education', 'contact']}
                             >
                             <li className="nav-item">
                                 <a className="nav-link" href="#about">{t('component.topbar.text-menu-about')}</a>
@@ -101,6 +101,9 @@ class Topbar extends Component {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#skills">{t('component.topbar.text-menu-skills')}</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#education">{t('component.topbar.text-menu-education')}</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#contact">{t('component.topbar.text-menu-contact')}</a>

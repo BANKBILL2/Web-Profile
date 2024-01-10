@@ -160,6 +160,7 @@
     width: 17%;
     display: flex;
     align-items: center;
+    z-index: 1000;
 }
 
     .sidebar-layout .nav-sub {
@@ -570,6 +571,135 @@
         margin-bottom: 1px;
     }
 
+.education-section {
+    min-height: 100vh;
+    height: 100%;
+    padding-left: 0px;
+    background-image: url(../Images/education-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-cover-education-section {
+    background: rgba(255,255,255, 0.8);
+    min-height: 100vh;
+    height: 100%;
+}
+
+.text-header-center-education-section {
+    color: #000000;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 30px #ffffff;
+}
+
+.img-wrap-education-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -100px;
+    margin-right: 20px;
+}
+
+.img-education-section {
+    margin-right: 15px;
+    position: relative;
+    z-index: 1;
+    border-radius: 300px;
+    box-shadow: 5px 5px 5px #C1272D;
+}
+
+    .img-education-section img {
+        width: 100%;
+        border-radius: 300px;
+    }
+
+    .img-education-section:before {
+        position: absolute;
+        left: 3%;
+        top: 2%;
+        width: 94%;
+        height: 96%;
+        content: "";
+        border: 3px solid #C1272D;
+        border-radius: 300px;
+    }
+
+.img-inner-education-section {
+    border-radius: 300px;
+    position: relative;
+    margin-top: 80px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px #6F3089;
+}
+
+    .img-inner-education-section img {
+        width: 100%;
+        border-radius: 300px;
+    }
+
+    .img-inner-education-section:before {
+        position: absolute;
+        left: 3%;
+        top: 2%;
+        width: 94%;
+        height: 96%;
+        content: "";
+        border: 3px solid #6F3089;
+        border-radius: 300px;
+    }
+
+.frame2-education-section {
+    align-self: center;
+}
+
+.content-education-section {
+    width: 85%;
+    padding: 18px 30px;
+    background: #fff;
+    text-align: right;
+    float: left;
+    border: 1px solid transparent;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
+    margin-bottom: 50px;
+}
+
+.date-education-section {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    transition: all 0.3s ease 0s;
+}
+
+    .date-education-section.swu {
+        color: #C1272D
+    }
+
+    .date-education-section.dpu {
+        color: #6F3089
+    }
+
+.title-education-section {
+    font-size: 18px;
+    color: #444;
+    margin-top: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.description-education-section {
+    font-size: 16px;
+    color: #777;
+    line-height: 28px;
+    margin-top: 8px;
+}
+
 .contact-section {
     min-height: 100vh;
     height: 100%;
@@ -653,6 +783,18 @@
     margin-top: 30px;
 }
 
+@media (max-width: 1200px) {
+    .skill-item-skill-section h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .skill-item-skill-section h2 {
+        font-size: 28px;
+    }
+}
+
 @media (max-width: 999px) {
     .main-layout {
         width: 100%;
@@ -672,8 +814,35 @@
         font-size: 1.3rem;
     }
 
+    .skill-item-skill-section h2 {
+        font-size: 25px;
+    }
+
     .skills-section {
         padding-left: calc(var(--bs-gutter-x) * 0.5);
+    }
+
+    .img-wrap-education-section {
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: center;
+    }
+
+    .img-inner-education-section {
+        margin-top: 0px;
+    }
+
+    .content-education-section {
+        text-align-last: center;
+    }
+
+    .frame1-education-section {
+        padding: 0px 50px 0px 50px;
+    }
+
+    .frame2-education-section {
+        display: grid;
+        justify-items: center;
     }
 }
 
@@ -733,6 +902,21 @@
     .form-control {
         font-size: 1.3rem;
     }
+
+    .date-education-section {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .title-education-section {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .description-education-section {
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
 
 @media (max-width: 540px) {
@@ -762,6 +946,18 @@
 
     .text-header-center-portfolio-section {
         font-size: 2rem;
+    }
+
+    .date-education-section {
+        font-size: 1.1rem;
+    }
+
+    .title-education-section {
+        font-size: 1.5rem;
+    }
+
+    .description-education-section {
+        font-size: 1.5rem;
     }
 }
 
