@@ -255,7 +255,7 @@ class Contact_Section extends React.Component {
                                             <h3>
                                                 <i className="fa fa-phone cl-atlantis fa-1x" /> {t('page.contact-section.text-phone')}
                                             </h3>
-                                            <p>095-630-3856</p>
+                                            <p>(+66) 95-630-3856</p>
                                         </div>
                                         <div className="contact-mail contact-side-desc-contact-section contact-box-desc-contact-section">
                                             <h3>
