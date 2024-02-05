@@ -136,6 +136,7 @@
     display: flex;
     position: relative;
     align-items: center;
+    width: 0.5px;
 }
 
     .header-icon:after {
